@@ -14,6 +14,7 @@
 		1EB09D162687EDB500D14A2E /* App_Chat_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EB09D142687EDB500D14A2E /* App_Chat_MVVM.xcdatamodeld */; };
 		1EB09D182687EDB600D14A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB09D172687EDB600D14A2E /* Assets.xcassets */; };
 		1EB09D1B2687EDB600D14A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB09D192687EDB600D14A2E /* LaunchScreen.storyboard */; };
+		1EB09D292687F01500D14A2E /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB09D282687F01500D14A2E /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1EB09D172687EDB600D14A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EB09D1A2687EDB600D14A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EB09D1C2687EDB600D14A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB09D282687F01500D14A2E /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,12 @@
 		1EB09D0A2687EDB500D14A2E /* App_Chat_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1EB09D272687EF5800D14A2E /* Model */,
+				1EB09D262687EF5500D14A2E /* View */,
+				1EB09D252687EF5300D14A2E /* ViewModel */,
+				1EB09D242687EF4F00D14A2E /* Controller */,
+				1EB09D232687EF4400D14A2E /* Api */,
+				1EB09D222687EF1C00D14A2E /* Utils */,
 				1EB09D0B2687EDB500D14A2E /* AppDelegate.swift */,
 				1EB09D0D2687EDB500D14A2E /* SceneDelegate.swift */,
 				1EB09D0F2687EDB500D14A2E /* ViewController.swift */,
@@ -68,6 +76,49 @@
 				1EB09D142687EDB500D14A2E /* App_Chat_MVVM.xcdatamodeld */,
 			);
 			path = App_Chat_MVVM;
+			sourceTree = "<group>";
+		};
+		1EB09D222687EF1C00D14A2E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1EB09D232687EF4400D14A2E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		1EB09D242687EF4F00D14A2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1EB09D282687F01500D14A2E /* ConversationsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1EB09D252687EF5300D14A2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1EB09D262687EF5500D14A2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EB09D272687EF5800D14A2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +193,7 @@
 			files = (
 				1EB09D102687EDB500D14A2E /* ViewController.swift in Sources */,
 				1EB09D0C2687EDB500D14A2E /* AppDelegate.swift in Sources */,
+				1EB09D292687F01500D14A2E /* ConversationsController.swift in Sources */,
 				1EB09D0E2687EDB500D14A2E /* SceneDelegate.swift in Sources */,
 				1EB09D162687EDB500D14A2E /* App_Chat_MVVM.xcdatamodeld in Sources */,
 			);
