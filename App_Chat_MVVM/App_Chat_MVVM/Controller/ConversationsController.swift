@@ -15,14 +15,19 @@ class ConversationsController: UIViewController {
         super.viewDidLoad()
         configureUI()
     }
+    
+        // MARK: - Selectors
+    
+    @objc func showProfile() {
+        print(123)
+    }
         // MARK: - Helpers
     func configureUI() {
         view.backgroundColor = .red
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Mensagens"
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: <#T##UIImage?#>, style: <#T##UIBarButtonItem.Style#>, target: <#T##Any?#>, action: <#T##Selector?#>)
-        
+        let image = UIImage(systemName: "person.circle.fill")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(showProfile))
     }
 }
  
