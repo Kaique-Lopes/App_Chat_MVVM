@@ -18,6 +18,11 @@ class ConversationsController: UIViewController {
         // MARK: - Helpers
     func configureUI() {
         view.backgroundColor = .red
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Mensagens"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: <#T##UIImage?#>, style: <#T##UIBarButtonItem.Style#>, target: <#T##Any?#>, action: <#T##Selector?#>)
+        
     }
 }
  
