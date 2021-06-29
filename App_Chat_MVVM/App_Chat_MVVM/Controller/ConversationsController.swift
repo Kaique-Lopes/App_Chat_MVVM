@@ -9,7 +9,8 @@ import UIKit
 
 class ConversationsController: UIViewController {
         // MARK: - Properties
-    
+    private let tableView = UITableView(
+    )
         // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,17 @@ class ConversationsController: UIViewController {
         view.backgroundColor = .white
         
         configureNavigationBar()
+        configureTableView()
         
         let image = UIImage(systemName: "person.circle.fill")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(showProfile))
+    }
+    
+    func configureTableView() {
+        tableView.backgroundColor = .systemPink
+        
+        view.addSubview(tableView)
+        tableView.frame = view.frame
     }
     
     func configureNavigationBar() {
@@ -47,8 +56,6 @@ class ConversationsController: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         
         navigationController?.navigationBar.overrideUserInterfaceStyle = .dark
-        
-    
+ 
     }
 }
- 
