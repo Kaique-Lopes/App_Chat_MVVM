@@ -74,6 +74,7 @@ extension ConversationsController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        cell.textLabel?.text = "Kaique Programador !!!"
         return cell
     }
     
@@ -81,7 +82,9 @@ extension ConversationsController: UITableViewDataSource {
 }
 
 extension ConversationsController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }
 
 
