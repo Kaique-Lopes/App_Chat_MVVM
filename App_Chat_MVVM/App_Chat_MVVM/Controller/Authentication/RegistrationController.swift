@@ -5,4 +5,14 @@
 //  Created by Kaique Lopes on 28/06/21.
 //
 
-import Foundation
+import UIKit
+
+class RegistrationController: UIViewController{
+        // MARK: - Properties
+    
+        // MARK: - LifeCycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemGray
+    }
+}
