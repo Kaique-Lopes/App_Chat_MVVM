@@ -39,6 +39,9 @@ class ConversationsController: UIViewController {
         tableView.backgroundColor = .white
         tableView.rowHeight = 80
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+        tableView.tableFooterView = UIView()
+        tableView.dataSource = self
+        tableView.delegate = self
         
         view.addSubview(tableView)
         tableView.frame = view.frame
@@ -63,3 +66,22 @@ class ConversationsController: UIViewController {
  
     }
 }
+
+extension ConversationsController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        return cell
+    }
+    
+    
+}
+
+extension ConversationsController: UITableViewDelegate {
+    
+}
+
+
