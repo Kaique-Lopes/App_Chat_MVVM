@@ -6,8 +6,10 @@
 //
 
 import UIKit
+    private let reuseIdentifier = "ConversationCell"
 
 class ConversationsController: UIViewController {
+
         // MARK: - Properties
     private let tableView = UITableView(
     )
@@ -34,7 +36,9 @@ class ConversationsController: UIViewController {
     }
     
     func configureTableView() {
-        tableView.backgroundColor = .systemPink
+        tableView.backgroundColor = .white
+        tableView.rowHeight = 80
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
         
         view.addSubview(tableView)
         tableView.frame = view.frame
