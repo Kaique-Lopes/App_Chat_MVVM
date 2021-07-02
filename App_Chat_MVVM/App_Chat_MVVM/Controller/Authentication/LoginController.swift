@@ -20,6 +20,7 @@ class LoginController: UIViewController {
         // MARK: - Helpers
     func configureUI() {
         navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.barStyle = .black
         view.backgroundColor = .systemPurple
     }
 }
