@@ -13,7 +13,6 @@ class LoginController: UIViewController {
         // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray
         configureUI()
     }
     
@@ -21,12 +20,14 @@ class LoginController: UIViewController {
     func configureUI() {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
-        view.backgroundColor = .systemPurple
+        configureGradientLayer()
     }
     
     func configureGradientLayer() {
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
-        gradient.locations = [0]
+        gradient.locations = [0, 1]
+        view.layer.addSublayer(gradient)
+        gradient.frame = view.frame
     }
 }
