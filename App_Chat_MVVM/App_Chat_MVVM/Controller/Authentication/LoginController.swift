@@ -14,5 +14,12 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray
+        configureUI()
+    }
+    
+        // MARK: - Helpers
+    func configureUI() {
+        navigationController?.navigationBar.isHidden = true
+        view.backgroundColor = .systemPurple
     }
 }
