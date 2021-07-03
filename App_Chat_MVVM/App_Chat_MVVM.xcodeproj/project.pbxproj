@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EAE6F9D2690084C00194D5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAE6F9C2690084C00194D5E /* Extensions.swift */; };
 		1EB09D0C2687EDB500D14A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB09D0B2687EDB500D14A2E /* AppDelegate.swift */; };
 		1EB09D0E2687EDB500D14A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB09D0D2687EDB500D14A2E /* SceneDelegate.swift */; };
 		1EB09D102687EDB500D14A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB09D0F2687EDB500D14A2E /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EAE6F9C2690084C00194D5E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1EB09D082687EDB500D14A2E /* App_Chat_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_Chat_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB09D0B2687EDB500D14A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EB09D0D2687EDB500D14A2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		1EB09D222687EF1C00D14A2E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1EAE6F9C2690084C00194D5E /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				1EC3AD79268AB51000DAD035 /* RegistrationController.swift in Sources */,
 				1EB09D102687EDB500D14A2E /* ViewController.swift in Sources */,
 				1EC3AD77268AB4F200DAD035 /* LoginController.swift in Sources */,
+				1EAE6F9D2690084C00194D5E /* Extensions.swift in Sources */,
 				1EB09D0C2687EDB500D14A2E /* AppDelegate.swift in Sources */,
 				1EB09D292687F01500D14A2E /* ConversationsController.swift in Sources */,
 				1EB09D0E2687EDB500D14A2E /* SceneDelegate.swift in Sources */,
