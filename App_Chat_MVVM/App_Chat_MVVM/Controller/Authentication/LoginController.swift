@@ -9,7 +9,10 @@ import UIKit
 
 class LoginController: UIViewController {
         // MARK: - Properties
-    
+    private let iconImage: UIImageView = {
+        let iv = UIImageView()
+        return iv
+    }()
         // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
